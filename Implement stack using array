@@ -1,0 +1,28 @@
+class MyStack {
+    int top;
+    int oper[104];
+  public:
+    MyStack() {
+        top = -1;
+    }
+    void push(int x) {
+        // code here
+        if(top == 104) {
+            return;
+        }
+        else {
+            oper[++top] = x;
+        }
+    }
+
+    int pop() {
+        
+        // code here
+        if(top == -1) {
+            return -1;
+        }
+        else {
+            return oper[top--];
+        }
+    }
+};
