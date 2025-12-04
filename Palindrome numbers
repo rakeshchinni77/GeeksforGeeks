@@ -1,0 +1,24 @@
+class Solution {
+  public:
+    int isPallindrome(long long int N) {
+        // code here
+        string binarynum = "";
+        while(N>0) {
+            int ld = N%2;
+            binarynum += (ld+'0');
+            N/=2;
+        }
+        reverse(binarynum.begin(),binarynum.end());
+        int n = binarynum.size();
+        int low = 0;
+        int high = n-1;
+        while(low<high) {
+            if(binarynum[low]!=binarynum[high]) {
+                return 0;
+            }
+            low++;
+            high--;
+        }
+        return 1;
+    }
+};
