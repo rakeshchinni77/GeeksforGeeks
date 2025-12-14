@@ -1,3 +1,4 @@
+//palindrome number check
 class Solution {
   public:
     int isPallindrome(long long int N) {
