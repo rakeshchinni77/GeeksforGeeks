@@ -1,4 +1,3 @@
-//count digits
 class Solution {
   public:
     // Function to count the number of digits in n that evenly divide n
