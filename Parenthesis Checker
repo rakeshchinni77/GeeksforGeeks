@@ -1,4 +1,3 @@
-//Parenthesis check
 class Solution {
   public:
     bool isBalanced(string& s) {
