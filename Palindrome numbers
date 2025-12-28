@@ -1,7 +1,6 @@
 class Solution {
   public:
     int isPallindrome(long long int N) {
-        // code here
         string binarynum = "";
         while(N>0) {
             int ld = N%2;
