@@ -1,4 +1,3 @@
-//reverse digits
 class Solution {
   public:
     int evenlyDivides(int n) {
